@@ -1,0 +1,21 @@
+## Interface: 11508
+## Title: Spy2
+## Version: 1.0.0
+## Notes: Detects and alerts you to the presence of nearby enemy players.
+## OptionalDeps: Ace3, LibSharedMedia-3.0,
+## SavedVariables: Spy2DB
+
+#@no-lib-strip@
+Embeds.xml
+#@end-no-lib-strip@
+
+Spy2.xml
+
+Locales\Spy2-enUS.lua
+
+Spy2.lua
+Colors.lua
+Widgets.lua
+WindowOrder.lua
+MainWindow.lua
+List.lua

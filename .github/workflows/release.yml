@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: Spy2
+      - name: Package addon
+        run: zip -r "Spy2-${GITHUB_REF_NAME#v}.zip" Spy2 -x 'Spy2/.git/*' 'Spy2/.github/*'
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: Spy2-*.zip
+          generate_release_notes: true
