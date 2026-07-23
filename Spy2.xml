@@ -9,6 +9,7 @@
 		<Scripts>
 			<OnLoad>
 				self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+				self:SetAttribute("useOnKeyDown", false);
 				self:SetAttribute("type1", "macro");
 				self:SetAttribute("macrotext", "/targetexact nil");
 			</OnLoad>

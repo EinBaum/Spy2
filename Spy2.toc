@@ -1,4 +1,4 @@
-## Interface: 11508
+## Interface: 11509
 ## Title: Spy2
 ## Version: 1.0.0
 ## Notes: Detects and alerts you to the presence of nearby enemy players.
